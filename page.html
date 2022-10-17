@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>透透｜Tou・tou</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-70px";
+            }
+        }
+        $(function(){
+
+            $('#mainNav ul a').click(function(){
+                var targetID=$(this).attr('href');
+                var scrollTo=$(targetID).offset().top;
+
+                $('html, body').animate({'scrollTop':scrollTo},1000)
+                })
+                return false;
+            })
+            var $backToTop = $("#backTop");
+
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                $backToTop.show();
+              } else {
+                $backToTop.hide();
+              }
+                })
+                $backToTop.click(function(){
+                    $("html, body").animate({scrollTop: 0}, 1000);
+                })
+    </script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <p><img src="images/logo.png" alt=""></p>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#con_home">首頁</a></li>
+                <li><a href="#con_about">關於透透</a></li>
+                <li><a href="#con_product">產品介紹</a></li>
+                <li><a href="#con_designer">設計師</a></li>
+                <li><a href="https://www.pinkoi.com/store/furkidscreative" target="_blank">線上商店Pinkoi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="backTop"><a href="#">TOP</a></div>
+        <div id="con_home">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/banner01.jpg" class="d-block w-100" alt="...">
+                </div>
+                    <div class="carousel-item">
+                        <img src="images/banner02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/banner03.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button"           data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"           data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </div>
+        <div id="con_about">
+            <h2>關於透透 Tou・tou</h2>
+            <div class="content">
+                <div class="text">
+                    <p>2020年誕生第一件原創設計『透明長/短夾』，PVC與印花布的異材質結合
+                        <br>隔一年，將『透視、透過、透明』的” 透touˋ “融入品牌之中</p>
+                    <p>
+                        ｜透視｜<br>利用透明的錢夾，能夠透視自己的消費習慣，以利更了解自己。
+                    </p>    
+                    <p>
+                        ｜透過｜<br>透過我們讓印花可以更平易近人，展現個人生活美學態度。
+                    </p>    
+                    <p>
+                        ｜透明｜<br>透明的外表加上印花布，以及全透明內裡與車縫線的融合
+                    </p>    
+                    <p>一覽無遺的視覺衝擊，不怕遺忘在錢包角落那『兩個月前的發票』。</p>
+                </div>
+                <div class="photo">
+                    <img src="images/photo01.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="con_product">
+            <h2>產品介紹</h2>
+            <p >Tou・tou 採用PVC與文創特色印花布異材質結合，創作出各式各樣包袋配件商品。</p>
+            <div id="list">
+                <div class="item">
+                    <h3>透明系印花長夾</h3>
+                    <a href="https://www.pinkoi.com/store/furkidscreative?tag=%E9%95%B7%E5%A4%BE&i18n_tag=%E9%95%B7%E5%A4%BE" target="_blank"><img src="images/product01.jpg" alt=""></a>
+                    <p>Tou・tou 採用PVC與文創特色印花布異材質結合，簡約輕薄的設計且具功能實用性，原創內部全透明設計，給人清晰視覺感。 為國際旅行便利，特別設計Pin針&SIM卡夾層。</p>
+                </div>
+                <div class="item">
+                    <h3>透明系印花短夾</h3>
+                    <a href="https://www.pinkoi.com/store/furkidscreative?tag=%E7%9F%AD%E5%A4%BE&i18n_tag=%E7%9F%AD%E5%A4%BE" target="_blank"><img src="images/product02.jpg" alt=""></a>
+                    <p>Tou・tou 採用PVC與文創特色印花布異材質結合，簡約輕薄的設計且具功能實用性，原創內部全透明設計，給人清晰視覺感。 為國際旅行便利，特別設計Pin針&SIM卡夾層。</p>
+                </div>
+                <div class="item">
+                    <h3>印花收納萬用包</h3>
+                    <a href="https://www.pinkoi.com/store/furkidscreative?tag=%E8%90%AC%E7%94%A8%E5%8C%85&i18n_tag=%E8%90%AC%E7%94%A8%E5%8C%85" target="_blank"><img src="images/product03.jpg" alt=""></a>
+                    <p>原創設計防水彈口片式小包，特色個性印花布，純手工限量製作方便攜帶、輕鬆收納、單手開闔，適合3C無線耳機、零錢鑰匙、衛生用品，以及個人小物收納等等</p>
+                </div>
+                <div class="item">
+                    <h3>掛脖式眼鏡套</h3>
+                    <a href="https://www.pinkoi.com/store/furkidscreative?tag=%E7%9C%BC%E9%8F%A1%E5%8C%85&i18n_tag=%E7%9C%BC%E9%8F%A1%E5%8C%85" target="_blank"><img src="images/product04.jpg" alt=""></a>
+                    <p>原創設計防水彈口式掛頸小包，純手工限量製作。內裡採用麂皮絨布，可容納6吋以下(不含手機殼)或是眼鏡小物...等，扁平設計，單手開闔，整體輕薄易收納。</p>
+                </div>
+                <div class="item">
+                    <h3>透明系印花護照套</h3>
+                    <a href="https://www.pinkoi.com/store/furkidscreative?tag=%E8%AD%B7%E7%85%A7&i18n_tag=%E8%AD%B7%E7%85%A7" target="_blank"><img src="images/product05.jpg" alt=""></a>
+                    <p>原創透明PVC與印花布拼接出獨特的透視效果，採書套式收納，防潑水輕薄且具實用性，為方便出國替換Pin針&SIM卡，特別設計收納空間</p>
+                </div>
+                <div class="item">
+                    <h3>透明系印花小托特</h3>
+                    <a href="https://www.pinkoi.com/store/furkidscreative?tag=%E6%89%98%E7%89%B9&i18n_tag=%E6%89%98%E7%89%B9" target="_blank"><img src="images/product06.jpg" alt=""></a>
+                    <p>Tou・tou 採用PVC與文創特色印花布異材質結合，簡易便利的手提袋，中午外出用餐攜帶方便(裝便當沒問題！)，吸睛又具特色的文創風格印花布，讓你/妳成為辦公室或教室中的焦點。</p>
+                </div>
+            </div>
+        </div>
+        <div id="con_designer">
+            <h2>設計師團隊</h2>
+            <div class="intro">
+                <ul>
+                    <li>
+                        <img class="pp" src="images/designer01.jpg" alt="">
+                        <h3>Chelsey</h3>
+                        <a href="mailto:chelsey.kao@gmail.com"><img src="images/mail.svg" alt="">寄信給設計師</a>
+                    </li>
+                    <li>
+                        <h4>負責項目</h4>
+                        <p>產品設計</p>
+                        <p>商品上架</p>
+                        <p>廣宣製作</p>
+                        <p>業務合作洽談</p>
+                    </li>
+                    <li>
+                        <img class="pp" src="images/designer02.jpg" alt="">
+                        <h3>Viola</h3>
+                        <a href="mailto:viola.wang@gmail.com"><img src="images/mail.svg" alt="">寄信給設計師</a>
+                    </li>
+                    <li>
+                        <h4>負責項目</h4>
+                        <p>產品設計</p>
+                        <p>產品製作</p>
+                        <p>商品攝影</p>
+                        <p>商品陳列</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerLogo"><img src="images/logo.png" alt=""></div>
+        <div id="footerSoc">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/furkidscreative" target="_blank"><img src="images/facebook.svg" alt=""></a></li>
+                <li><a href="https://www.instagram.com/furkids.creative/" target="_blank"><img src="images/instagram.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/pinterest.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div id="footerInfo">
+            <p>星期一至星期五 9:00~18:00 (例假日客服休息)</p> 
+            <p>客服信箱：toutoudesign2020@gmail.com</p>
+            <p>看透文創工作室 Tou tou Design &copy; 2022 All Rights Reserved.</p> 
+        </div>
+    </footer>
+</body>
+</html>
